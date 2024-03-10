@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippet Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #outputArea {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Snippet Generator</h2>
+
+    <form id="snippetForm">
+        <div class="container">
+            <label for="language">Programming Language:</label>
+            <select id="language" name="language">
+                <option value="csharp">C#</option>
+                <option value="cplusplus">C++</option>
+                <option value="go">Go</option>
+                <option value="java">Java</option>
+                <option value="javascript">JavaScript</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="php">PHP</option>
+                <option value="python">Python</option>
+                <option value="ruby">Ruby</option>
+                <option value="typescript">TypeScript</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" placeholder="Describe your task">
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="generateSnippet()">Generate Snippet</button>
+        </div>
+    </form>
+
+    <div id="outputArea" contenteditable="true">Your generated snippet will appear here...</div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js' )}}"></script>
+
+</body>
+
+</html>
