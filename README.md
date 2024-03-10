@@ -4,7 +4,7 @@ A Flask app coding assistant to generate snippets in any language.
 
 ## Dependencies
 
-* [Pipenv](https://docs.pipenv.org/basics/): 
+* [Pipenv](https://docs.pipenv.org/basics/): Python virtual environment management tool
 * [Flask](https://flask.palletsprojects.com/): Lightweight Python framework for web apps
 * [LangChain](https://www.langchain.com/): Context-aware LLM library
 * [OpenAI](https://platform.openai.com/docs/overview): GPT 3.5 LLM
