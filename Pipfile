@@ -8,6 +8,7 @@ flask = "*"
 langchain = "*"
 openai = "*"
 python-dotenv = "*"
+langchain-openai = "*"
 
 [dev-packages]
 
